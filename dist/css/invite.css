@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    /*overflow-x: hidden;*/
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.u-section {
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+a[ id= "home" ]:target {
+    -webkit-transform: translateY( 0px );
+            transform: translateY( 0px );
+}
+
+a[id= "about"]:target  {
+    background: red;
+}
+
+.PersonalHero {
+    background-color: #2A3A3F;
+    height: 100vh;
+    width:100%;
+}
+
+.PersonalHero-copy {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align:center;
+                align-items:center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        margin: 0;
+    }
+
+.PersonalHero-navbar {
+        position: fixed;
+        background-color: purple;
+        width: 60px;
+        top: 0;
+        bottom: 0;    
+    }
+
+.PersonalHero-menu {
+        list-style: none;
+        text-align: center;
+        margin: 16px 0px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+.PersonalHero-menu-item {
+            background-color: #48549f;
+            margin-bottom: 8px;
+            height: 50px;
+            cursor: pointer; 
+        }
+
+.PersonalAbout {
+    background-color: lightblue;
+    height: 100vh;
+    width:100%;
+}
+
+.PersonalAbout-text {
+        margin:0;
+    }

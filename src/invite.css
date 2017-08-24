@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    /*overflow-x: hidden;*/
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.u-section {
+    transition: transform 0.6s ease-in-out;
+}
+
+a[ id= "home" ]:target {
+    transform: translateY( 0px );
+}
+
+a[id= "about"]:target  {
+    background: red;
+}
+
+.PersonalHero {
+    background-color: #2A3A3F;
+    height: 100vh;
+    width:100%;
+
+    &-copy {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    &-navbar {
+        position: fixed;
+        background-color: purple;
+        width: 60px;
+        top: 0;
+        bottom: 0;    
+    }
+
+    &-menu {
+        list-style: none;
+        text-align: center;
+        margin: 16px 0px;
+        padding: 0;
+        font-size: 14px;
+        &-item {
+            background-color: #48549f;
+            margin-bottom: 8px;
+            height: 50px;
+            cursor: pointer; 
+        }
+    }
+}
+
+.PersonalAbout {
+    background-color: lightblue;
+    height: 100vh;
+    width:100%;
+    &-text {
+        margin:0;
+    }
+}
